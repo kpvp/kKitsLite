@@ -1,4 +1,11 @@
 name: kKitsLite
 authors: [AeroUK, iCaake]
-main: us.kpvpdev.kkitslite.KKitsLite
+main: us.kpvpdev.kkitslite.kKitsLite
 version: 0.2
+
+commands:
+  pvp:
+  archer:
+  tank:
+  refill:
+  kkitslite:
