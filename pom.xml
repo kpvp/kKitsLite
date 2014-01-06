@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>us.kpvpdev.kkitslite</groupId>
     <artifactId>kKitsLite</artifactId>
-    <version>0.2</version>
+    <version>0.4.0</version>
     <name>kKitsLite</name>
     <repositories>
         <repository>
