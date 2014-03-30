@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>us.kpvpdev.kkitslite</groupId>
     <artifactId>kKitsLite</artifactId>
-    <version>0.4.0</version>
+    <version>0.4.1</version>
     <name>kKitsLite</name>
     <repositories>
         <repository>
@@ -27,7 +27,7 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.7.2-R0.2</version>
+            <version>1.7.2-R0.3</version>
         </dependency>
     </dependencies>
 </project>

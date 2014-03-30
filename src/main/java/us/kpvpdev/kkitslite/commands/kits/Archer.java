@@ -8,20 +8,20 @@ import us.kpvpdev.kkitslite.utils.Chat;
 
 public class Archer implements CommandExecutor {
 
-	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-		if(sender instanceof Player && args.length >= 0) {
-			Player player = (Player)sender;
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if(sender instanceof Player && args.length >= 0) {
+            Player player = (Player)sender;
 
-			if(player.hasPermission("kkitslite.kits.arhcer")) {
-				Kits.archer.giveKit(player);
-			} else {
-				Chat.noKitPerms(sender, "Archer");
-			}
+            if(player.hasPermission("kkitslite.kits.arhcer")) {
+                Kits.archer.giveKit(player);
+            } else {
+                Chat.noKitPerms(sender, "Archer");
+            }
 
-			return true;
-		}
+            return true;
+        }
 
-		return false;
-	}
+        return false;
+    }
 
 }

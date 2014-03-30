@@ -9,22 +9,24 @@ import us.kpvpdev.kkitslite.utils.Config;
 
 public class kKitsLite extends JavaPlugin {
 
-	public void onEnable() {
-		kkitslite = this;
+    @Override
+    public void onEnable() {
+        kkitslite = this;
 
-		Commands.registerCommands();
-		Config.setupConfig(this);
-		Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
-	}
+        Commands.registerCommands();
+        Config.setupConfig(this);
+        Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
+    }
 
-	public void onDisable() {
-		kkitslite = null;
-	}
+    @Override
+    public void onDisable() {
+        kkitslite = null;
+    }
 
-	private static kKitsLite kkitslite;
+    private static kKitsLite kkitslite;
 
-	public static kKitsLite getInstance() {
-		return kkitslite;
-	}
+    public static kKitsLite getInstance() {
+        return kkitslite;
+    }
 
 }
