@@ -14,7 +14,8 @@ public class Archer implements CommandExecutor {
 
             if(player.hasPermission("kkitslite.kits.arhcer")) {
                 Kits.archer.giveKit(player);
-            } else {
+            }
+            else {
                 Chat.noKitPerms(sender, "Archer");
             }
 
