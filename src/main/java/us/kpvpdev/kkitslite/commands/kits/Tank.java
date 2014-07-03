@@ -14,8 +14,7 @@ public class Tank implements CommandExecutor {
 
             if(player.hasPermission("kkitslite.kits.tank")) {
                 Kits.tank.giveKit(player);
-            }
-            else {
+            } else {
                 Chat.noKitPerms(sender, "Tank");
             }
 

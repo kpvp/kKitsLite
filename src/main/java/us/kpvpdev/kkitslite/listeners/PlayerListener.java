@@ -61,14 +61,14 @@ public class PlayerListener implements Listener {
 
     @EventHandler
     public void onPlayerItemDrop(PlayerDropItemEvent e) {
-        if( ! Config.canDropItems) {
+        if(!Config.canDropItems) {
             e.setCancelled(true);
         }
     }
 
     @EventHandler
     public void onItemSpawn(ItemSpawnEvent e) {
-        if( ! Config.canDropsSpawn) {
+        if(!Config.canDropsSpawn) {
             e.setCancelled(true);
         }
     }

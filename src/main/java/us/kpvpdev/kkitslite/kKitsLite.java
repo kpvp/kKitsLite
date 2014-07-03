@@ -9,6 +9,8 @@ import us.kpvpdev.kkitslite.utils.Config;
 
 public class kKitsLite extends JavaPlugin {
 
+    // where is the lombok
+
     @Override
     public void onEnable() {
         kkitslite = this;

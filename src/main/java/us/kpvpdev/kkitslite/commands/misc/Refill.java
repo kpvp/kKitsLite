@@ -17,7 +17,7 @@ public class Refill implements CommandExecutor {
         if(sender instanceof Player && args.length >= 0) {
             final Player player = (Player)sender;
 
-            if( ! Utils.refilling.contains(player.getName())) {
+            if(!Utils.refilling.contains(player.getName())) {
                 Utils.refilling.add(player.getName());
                 Chat.sendMessage(sender, "Refilling in " + (Config.refillTime) + " seconds...");
 
@@ -39,8 +39,7 @@ public class Refill implements CommandExecutor {
                         Utils.refilling.remove(player.getName());
                     }
                 }.runTaskLater(kKitsLite.getInstance(), Config.refillTime * 20);
-            }
-            else {
+            } else {
                 Chat.sendMessage(sender, "You're already refilling!");
             }
 

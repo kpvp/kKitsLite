@@ -54,7 +54,7 @@ public class Config {
     public static void setupConfig(kKitsLite p) {
         File file = new File(p.getDataFolder(), "config.yml");
 
-        if( ! file.exists()) {
+        if(!file.exists()) {
             try {
                 FileConfiguration config = kKitsLite.getInstance().getConfig();
 

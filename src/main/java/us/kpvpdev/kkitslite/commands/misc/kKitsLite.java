@@ -14,13 +14,11 @@ public class kKitsLite implements CommandExecutor {
             Chat.sendMessage(sender, "  * Archer Usage: /archer");
             Chat.sendMessage(sender, "  * Tank Usage: /tank");
             Chat.sendMessage(sender, "Full version plugin @ kitpvp.eu");
-        }
-        else if(args.length >= 1) {
+        } else if(args.length >= 1) {
             if(args[0].equalsIgnoreCase("reload") && sender.isOp()) {
                 Config.loadConfig();
                 Chat.sendMessage(sender, "Reloaded config");
-            }
-            else {
+            } else {
                 Chat.sendMessage(sender, "You can't use this!");
             }
         }

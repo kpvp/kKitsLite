@@ -14,8 +14,7 @@ public class PvP implements CommandExecutor {
 
             if(player.hasPermission("kkitslite.kits.pvp")) {
                 Kits.pvp.giveKit(player);
-            }
-            else {
+            } else {
                 Chat.noKitPerms(sender, "PvP");
             }
 
