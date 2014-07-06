@@ -9,7 +9,6 @@ import org.bukkit.event.entity.EntityRegainHealthEvent.RegainReason;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.ItemStack;
 
-import us.kpvpdev.kkitslite.kKitsLite;
 import us.kpvpdev.kkitslite.utils.Chat;
 import us.kpvpdev.kkitslite.utils.Config;
 
@@ -36,14 +35,14 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void onKick(PlayerKickEvent e) {
         if(Config.customJoinMessage) {
-            e.setLeaveMessage(Chat.color("&c[-]&7 " + e.getPlayer().getName() + " connected"));
+            e.setLeaveMessage(Chat.color("&c[-]&7 " + e.getPlayer().getName() + " disconnected"));
         }
     }
 
     @EventHandler
     public void onQuit(PlayerQuitEvent e) {
         if(Config.customJoinMessage) {
-            e.setQuitMessage(Chat.color("&c[-]&7 " + e.getPlayer().getName() + " connected"));
+            e.setQuitMessage(Chat.color("&c[-]&7 " + e.getPlayer().getName() + " disconnected"));
         }
     }
 
