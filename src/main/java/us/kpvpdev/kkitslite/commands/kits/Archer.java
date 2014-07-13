@@ -12,7 +12,7 @@ public class Archer implements CommandExecutor {
         if(sender instanceof Player && args.length >= 0) {
             Player player = (Player)sender;
 
-            if(player.hasPermission("kkitslite.kits.arhcer")) {
+            if(player.hasPermission("kkitslite.kits.archer")) {
                 Kits.archer.giveKit(player);
             } else {
                 Chat.noKitPerms(sender, "Archer");
